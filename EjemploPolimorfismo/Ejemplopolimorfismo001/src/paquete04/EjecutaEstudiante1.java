@@ -4,7 +4,7 @@ package paquete04;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class EjecutaEstudiante {
+public class EjecutaEstudiante1 {
 
     public static void main(String[] args) {
 
@@ -118,6 +118,8 @@ public class EjecutaEstudiante {
         for (int i = 0; i < 4; i++) {
             // 1.  
             estudiantes[i].calcularMatricula();
+            System.out.printf("%s\n", estudiantes[i]);
+            
             // en el punto 1, estudiantes[i] representa un objeto de tipo 
             // EstudiantePresencial o EstudianteDistancia; en cualquiera de los
             // dos casos, para dichos objetos se llama al método calcularMatricula()
@@ -129,6 +131,7 @@ public class EjecutaEstudiante {
             // 2. se hace uso de los métodos obtener del objeto para presentar
             // los valores que se necesite en pantalla
             // Imprimir:
+            /*
             System.out.printf("Datos Estudiante\n"
                         + "Nombres: %s\n"
                         + "Apellidos: %s\n"
@@ -140,6 +143,9 @@ public class EjecutaEstudiante {
                   estudiantes[i].obtenerIdentificacionEstudiante(),
                   estudiantes[i].obtenerEdadEstudiante(),
                   estudiantes[i].obtenerMatricula());
+     
+*/
+            
             
         }
     }
