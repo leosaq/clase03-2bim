@@ -82,7 +82,12 @@ public abstract class Estudiante {
 
     @Override
     public String toString() {
-        return "Estudiante{" + "nombresEstudiante=" + nombresEstudiante + ", apellidosEstudiante=" + apellidosEstudiante + ", identificacionEstudiante=" + identificacionEstudiante + ", edadEstudiante=" + edadEstudiante + ", matricula=" + matricula + '}';
+        return String.format("Nombres: %s\nApellidos: %s\nIdentificación: %s\nEdad: %d\nMatrícula: %.2f\n",
+                obtenerNombresEstudiante(),
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
+                obtenerMatricula());
     }
     
     
