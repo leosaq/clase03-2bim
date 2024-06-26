@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete07;
 
-/**
- *
- * @author reroes
- */
-public class Figura {
+abstract class Figura {
+    protected String caracteristicas;
+    protected double area;
+
+    public abstract void calcular_area();
+
+    public double getArea() {
+        return area;
+    }
+
+    public String getCaracteristicas() {
+        return caracteristicas;
+    }
+
+    public void setCaracteristicas(String caracteristicas) {
+        this.caracteristicas = caracteristicas;
+    }
+
+    @Override
+    public String toString() {
+        return "Figura{" + "caracteristicas=" + caracteristicas + ", area=" + area + '}';
+    }
+    
     
 }
